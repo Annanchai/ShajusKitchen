@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+
+nav {
+  background-color: #70748f;
+  padding: 1.5rem 2rem 1.5rem 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+  transition: 1s ease;
+}
+nav ul a:hover {
+  background-color: #67987a;
+}
+
+.welcome {
+  height: 92vh;
+  background-color: #679893;
+  margin-top: 5rem;
+}
+.welcome h1,
+.welcome p {
+  font-family: "Permanent Marker", cursive;
+  color: #ffffff;
+  text-align: center;
+}
+.welcome h1 {
+  font-size: 5rem;
+  letter-spacing: 0.7rem;
+  padding-top: 1rem;
+}
+.welcome p {
+  font-size: 3rem;
+}
+.welcome .lottie-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.welcome .lottie {
+  padding: 0 3rem;
+  padding-bottom: 3rem;
+  border: 3px solid #ffffff;
+  border-radius: 5rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+.welcome .lottie a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  background-color: #70748f;
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 2rem;
+  transition: 1s ease;
+}
+.welcome .lottie a:hover {
+  background-color: #67987a;
+}
+.welcome .lottie:first-of-type {
+  margin-right: 5rem;
+}/*# sourceMappingURL=styles.css.map */
