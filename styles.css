@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
   font-family: "Roboto", sans-serif;
   font-size: 10px;
 }
@@ -11,9 +15,23 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 5rem;
+  letter-spacing: 0.7rem;
+  font-family: "Permanent Marker", cursive;
+  color: #ffffff;
+  text-align: center;
+}
+
+h3 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 3rem;
+}
+
 nav {
   background-color: #70748f;
-  padding: 1.5rem 2rem 1.5rem 0;
+  padding: 2rem 2rem 2rem 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -28,28 +46,34 @@ nav ul {
 nav ul a {
   color: #ffffff;
   font-size: 1.8rem;
-  padding: 1.5rem 3rem;
+  padding: 2rem 3rem;
   transition: 1s ease;
 }
 nav ul a:hover {
   background-color: #67987a;
 }
 
-.welcome {
-  height: 92vh;
-  background-color: #679893;
-  margin-top: 5rem;
+footer {
+  padding: 2rem 0;
+  background-color: #70748f;
+  color: #ffffff;
+  text-align: center;
 }
-.welcome h1,
+footer p {
+  font-size: 1.5rem;
+}
+
+.welcome {
+  height: 100vh;
+  background-color: #679893;
+}
 .welcome p {
   font-family: "Permanent Marker", cursive;
   color: #ffffff;
   text-align: center;
 }
 .welcome h1 {
-  font-size: 5rem;
-  letter-spacing: 0.7rem;
-  padding-top: 1rem;
+  padding-top: 10rem;
 }
 .welcome p {
   font-size: 3rem;
@@ -58,6 +82,12 @@ nav ul a:hover {
   display: flex;
   justify-content: center;
   align-items: baseline;
+}
+.welcome .developer-lottie {
+  width: 35rem;
+}
+.welcome .cooking-lottie {
+  width: 30rem;
 }
 .welcome .lottie {
   padding: 0 3rem;
@@ -79,7 +109,7 @@ nav ul a:hover {
   transition: 1s ease;
 }
 .welcome .lottie:first-of-type {
-  margin-right: 5rem;
+  margin-right: 8rem;
 }
 .welcome .lottie:last-of-type {
   padding-left: 5.5rem;
@@ -95,9 +125,18 @@ nav ul a:hover {
 }
 
 .contact {
-  background-color: #67987a;
-  padding: 5rem 0 13.5rem 0;
+  background-color: #70748f;
+}
+.contact .contact-container {
+  padding: 5rem 0 3rem 0;
   text-align: center;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#bdc3c7, #2c3e50);
+  border-radius: 50%;
 }
 .contact h2 {
   font-family: "Permanent Marker", cursive;
@@ -105,7 +144,6 @@ nav ul a:hover {
   color: #ffffff;
   letter-spacing: 0.7rem;
   text-align: center;
-  padding-top: 5rem;
 }
 .contact p {
   font-size: 2rem;
@@ -136,13 +174,66 @@ nav ul a:hover {
   margin-right: 1rem;
   font-size: 2.5rem;
 }
-
-footer {
-  padding: 2rem 0;
-  background-color: #70748f;
+.contact .home-arrow {
   color: #ffffff;
+  width: 90px;
+  height: 90px;
+  padding-top: 25px;
+  border-radius: 50%;
+  background-color: #70748f;
+  margin-top: 10rem;
+  box-shadow: 0.1rem 0.1rem 2rem #000000;
+  transition: 0.8s ease;
+}
+.contact .home-arrow i {
+  font-size: 4rem;
+  transition: 0.8s ease;
+}
+.contact .home-arrow:hover {
+  box-shadow: 0.1rem 0.1rem 2rem #679893;
+}
+.contact .home-arrow:hover i {
+  transform: rotate(360deg);
+}
+
+.project-welcome {
+  background-color: #679893;
+}
+.project-welcome h1 {
+  padding: 8rem 0 3rem 0;
+  font-size: 7rem;
   text-align: center;
 }
-footer p {
-  font-size: 1.5rem;
+.project-welcome .project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  padding-bottom: 5rem;
+}
+.project-welcome .project {
+  background-color: #70748f;
+  border-radius: 2rem;
+  padding: 2rem 2rem 2rem 2rem;
+  transition: 1s ease-in-out;
+}
+.project-welcome img {
+  max-width: 60rem;
+  width: 40vw;
+  height: 40rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid #ffffff;
+  border-radius: 2rem;
+  box-shadow: 0.1rem 0.1rem 2rem #000000;
+  transition: 1s ease;
+}
+.project-welcome h3 {
+  margin-top: 2rem;
+}
+.project-welcome .project:hover {
+  transform: scale(1.05);
+}
+.project-welcome .project:hover img {
+  box-shadow: 0.1rem 0.1rem 2rem #679893;
 }/*# sourceMappingURL=styles.css.map */
