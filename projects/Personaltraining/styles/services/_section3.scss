@@ -1,0 +1,92 @@
+.services-section3{
+    
+    h1{
+        font-family: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 20px;
+        font-style: italic;
+        font-size: 130px;
+        font-weight: bolder;
+        color: white;
+        text-shadow: 5px 5px 80px grey;
+        margin: 10px 100px;
+        text-align: center;
+    }
+
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+
+        .content1{
+            background-color: $red;
+            height: 85vh;
+
+            .content1a{
+                background-image: radial-gradient(circle at bottom left, rgba(255, 76, 0, 0.3) 70%, rgba(255, 76, 0, 0.3) 70%), url(../images/image12.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 550px;
+                height: 350px;
+                position: relative;
+                top: 85px;
+                left: 125px;
+
+                h3{
+                    font-family: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
+                    letter-spacing: 5px;
+                    font-style: italic;
+                    font-size: 40px;
+                    font-weight: bolder;
+                    color: white;
+                    text-shadow: 5px 5px 15px ghostwhite;
+                    padding: 50px 80px 0 50px;
+                    
+                }
+                
+            }
+        }
+
+        .content2{
+            background: radial-gradient(circle at bottom left, #c1c1c1 -10%, $grey 70%);
+            width: 550px;
+            height: 350px;
+            margin-top: 85px;
+
+            p{
+                padding: 70px 50px;
+                line-height: 1.5;
+                text-align: justify;
+                color: ghostwhite;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:600px){
+    .services-section3{
+        h1{
+            font-size: 60px;
+            margin: 10px 50px;
+        }
+
+        .content1{
+            grid-area: 1/1/2/3;
+
+            .content1a{
+                width: 400px !important;
+                left: 40px !important;
+            }
+        }
+
+        .content2{
+            grid-area: 2/1/3/3;
+            width: auto !important;
+            height: auto !important;
+            margin-top: 0 !important;
+            overflow-x: hidden !important;
+
+        }
+
+        
+    }
+}

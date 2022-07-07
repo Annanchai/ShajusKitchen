@@ -23,6 +23,13 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-family: "Permanent Marker", cursive;
+  color: #ffffff;
+  letter-spacing: 0.7rem;
+  text-align: center;
+}
+
 h3 {
   color: #ffffff;
   text-align: center;
@@ -126,6 +133,7 @@ footer p {
 
 .contact {
   background-color: #70748f;
+  padding-top: 5rem;
 }
 .contact .contact-container {
   padding: 5rem 0 3rem 0;
@@ -139,11 +147,7 @@ footer p {
   border-radius: 50%;
 }
 .contact h2 {
-  font-family: "Permanent Marker", cursive;
   font-size: 5.5rem;
-  color: #ffffff;
-  letter-spacing: 0.7rem;
-  text-align: center;
 }
 .contact p {
   font-size: 2rem;
@@ -204,6 +208,91 @@ footer p {
   font-size: 7rem;
   text-align: center;
 }
+.project-welcome .mobile-app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeeeee;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2rem;
+  margin-bottom: 5rem;
+  padding-bottom: 10rem;
+}
+.project-welcome .mobile-app-container h2 {
+  color: #70748f;
+  font-size: 8rem;
+}
+.project-welcome .mobile-app-container h3 {
+  color: #ffffff;
+  background-color: #67987a;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  font-size: 4rem;
+}
+.project-welcome .fitness-app {
+  width: 36rem;
+  height: 64rem;
+  margin-top: 4rem;
+  transform: rotate(-30deg) skew(25deg) scale(0.8);
+  transition: 0.5s;
+}
+.project-welcome .fitness-app img {
+  position: absolute;
+  width: 100%;
+  transition: 0.5s;
+}
+.project-welcome .fitness-app:hover .pt3 {
+  transform: translate(-5rem, -4rem);
+  opacity: 0.6;
+}
+.project-welcome .fitness-app:hover .pt2 {
+  transform: translate(5rem, -7rem);
+  opacity: 0.8;
+}
+.project-welcome .fitness-app:hover .pt1 {
+  transform: translate(15rem, -10rem);
+  opacity: 1;
+}
+.project-welcome .feedback-app {
+  width: 60rem;
+  height: 37.5rem;
+  margin-top: 4rem;
+  transition: 0.5s;
+  transform: rotateX(-40deg) rotateZ(-40deg) rotateY(-20deg) skew(-5deg);
+  box-shadow: -80px 60px 15px 5px rgba(0, 0, 0, 0.4);
+}
+.project-welcome .feedback-app img {
+  position: absolute;
+  width: 60rem;
+  transition: 0.5s;
+}
+.project-welcome .feedback-app:hover {
+  margin-top: 12rem;
+  transform: unset;
+  box-shadow: unset;
+}
+.project-welcome .feedback-app:hover .mobile-app-container {
+  padding-bottom: 10rem;
+}
+.project-welcome .feedback-app:hover .fd1 {
+  transform: translate(20rem, -9rem);
+}
+.project-welcome .feedback-app:hover .fd2 {
+  transform: translate(10rem, -5rem);
+}
+.project-welcome .feedback-app:hover .fd3 {
+  transform: translate(-10rem, 5rem);
+}
+.project-welcome .feedback-app:hover .fd4 {
+  transform: translate(-20rem, 9rem);
+}
+.project-welcome .website-container h2 {
+  font-size: 8rem;
+  color: #ffffff;
+  padding-bottom: 3rem;
+}
 .project-welcome .project-container {
   display: flex;
   flex-wrap: wrap;
@@ -217,7 +306,7 @@ footer p {
   padding: 2rem 2rem 2rem 2rem;
   transition: 1s ease-in-out;
 }
-.project-welcome img {
+.project-welcome .project img {
   max-width: 60rem;
   width: 40vw;
   height: 40rem;

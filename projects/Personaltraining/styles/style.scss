@@ -1,0 +1,64 @@
+$red: #ff4c00;
+$grey: #434343;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: ghostwhite;
+}
+
+svg{
+    display: block;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: $grey;
+    color: ghostwhite;
+
+    a{
+        text-decoration: none;
+        color: ghostwhite;
+    }
+}
+
+@media only screen and(max-width: 600px){
+    footer{
+        flex-direction: column;
+        text-align: center
+    }
+}
+
+
+@import './index/nav';
+@import './index/section';
+@import './index/section1';
+@import './index/section2';
+@import './index/section3';
+@import './index/section4';
+@import './index/section5';
+@import './index/section6';
+@import './index/section7';
+
+@import './about/section1';
+@import './about/section2';
+@import './about/section3';
+@import './about/section4';
+@import './about/section5';
+
+@import './contact/section1';
+@import './contact/section2';
+@import './contact/section3';
+
+@import './services/section1';
+@import './services/section2';
+@import './services/section3';
+
+

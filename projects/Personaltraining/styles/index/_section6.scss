@@ -1,0 +1,64 @@
+.section6{
+    margin: 200px 150px 0 150px;
+
+
+    h6{
+        font-size: 15px;
+        font-family: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 3px;
+        font-style: italic;
+        margin-left: 20px;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+
+    h1{
+        font-family: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 40px;
+        letter-spacing: 10px;
+        font-style: italic;
+        text-shadow: 1px 1px 10px ghostwhite;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .line{
+        margin-left: 0;
+    }
+}
+
+.testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    grid-column-gap: 80px;
+    text-align: justify;
+    font-style: italic;
+    color: $grey;
+    margin-left: 20px;
+
+    h6{
+        margin-top: 30px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and(max-width: 600px){
+    .testimonials1{
+        grid-area: 1/1/2/4;
+    }
+    .testimonials2{
+        grid-area: 2/1/3/4;
+    }
+    .testimonials3{
+        grid-area: 3/1/4/4;
+    }
+
+    .section6{
+        margin: 50px;
+
+        h1{
+            font-size: 30px;
+        }
+    }
+}

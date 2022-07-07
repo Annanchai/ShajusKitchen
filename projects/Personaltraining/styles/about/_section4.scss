@@ -1,0 +1,88 @@
+.about-section4{
+    background-image: radial-gradient(circle at top left, $red 0%, $grey 50%);
+    text-align: center;
+    height: 160vh;
+
+    h1{
+        font-family: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 275px;
+        line-height: 1.2;
+        letter-spacing: 70px;
+        font-style: italic;
+        color: ghostwhite;
+    }
+
+    img{
+        position: relative;
+        top: -500px;
+        filter: drop-shadow(1px 1px 5px ghostwhite);
+    }
+
+    .social-icons{
+        position: relative;
+        top: -500px;
+        z-index: 1;
+        color: ghostwhite;
+
+        .line{
+            background-color: $red;
+            width: 400px;
+            margin-bottom: 10px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        h6{
+            font-size: 15px;
+            font-family: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 3px;
+            font-style: italic;
+            font-weight: normal;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+        
+
+        .fab{
+            font-size: 30px;
+            padding: 20px 22px;
+            box-shadow: 1px 1px 5px $red;
+            color: ghostwhite;
+            background-color: $red;
+            border-radius: 50%;
+            &:hover{
+                box-shadow: 1px 1px 5px ghostwhite;
+            }
+        }
+
+        .fa-facebook-f{
+            padding: 20px 25px;
+        }
+    }
+}
+
+@media only screen and(max-width: 600px){
+    .about-section4{
+        height: 100vh;
+
+        img{
+            width: 300px;
+            top: -200px;
+        }
+
+        h1{
+            font-size: 85px;
+            letter-spacing: 20px;
+        }
+
+        .social-icons{
+            top: -200px;
+
+            .line{
+                width: 300px;
+            }
+        }
+
+        
+    }
+}
