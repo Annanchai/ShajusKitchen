@@ -71,26 +71,27 @@ footer p {
 }
 
 .welcome {
-  height: 100vh;
+  padding-bottom: 10rem;
   background-color: #679893;
 }
 .welcome p {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Roboto", sans-serif;
   color: #ffffff;
   text-align: center;
 }
 .welcome h1 {
-  padding-top: 10rem;
+  padding-top: 7rem;
 }
 .welcome p {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .welcome .lottie-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 8rem;
+  gap: 5rem;
+  margin-top: -3rem;
 }
 .welcome .developer-lottie {
   width: 35rem;
@@ -178,15 +179,20 @@ footer p {
   font-size: 2.5rem;
 }
 .contact .home-arrow {
-  color: #ffffff;
-  width: 90px;
-  height: 90px;
-  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 5rem;
+  width: 9rem;
+  height: 9rem;
   border-radius: 50%;
   background-color: #70748f;
-  margin-top: 10rem;
   box-shadow: 0.1rem 0.1rem 2rem #000000;
   transition: 0.8s ease;
+}
+.contact .home-arrow a {
+  color: #ffffff;
 }
 .contact .home-arrow i {
   font-size: 4rem;
@@ -203,8 +209,8 @@ footer p {
   background-color: #679893;
 }
 .project-welcome h1 {
-  padding: 8rem 0 3rem 0;
-  font-size: 7rem;
+  padding: 6rem 0 2rem 0;
+  font-size: 5rem;
   text-align: center;
 }
 .project-welcome .mobile-app-container {
@@ -215,27 +221,33 @@ footer p {
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -2rem;
   border-radius: 2rem;
   margin-bottom: 5rem;
   padding-bottom: 10rem;
 }
 .project-welcome .mobile-app-container h2 {
   color: #70748f;
-  font-size: 8rem;
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: unset;
+  padding-top: 1rem;
+  text-decoration: underline;
 }
 .project-welcome .mobile-app-container h3 {
   color: #ffffff;
   background-color: #67987a;
-  padding: 1rem 2rem;
-  border-radius: 5rem;
-  font-size: 4rem;
+  padding: 1rem 0;
+  width: 90%;
+  font-size: 2rem;
 }
 .project-welcome .fitness-app {
   width: 36rem;
   height: 64rem;
-  margin-top: 4rem;
-  transform: rotate(-30deg) skew(25deg) scale(0.8);
+  transform: rotate(-30deg) skew(25deg) scale(0.7);
   transition: 0.5s;
+  margin-top: -3rem;
+  margin-bottom: -10rem;
 }
 .project-welcome .fitness-app img {
   position: absolute;
@@ -243,15 +255,15 @@ footer p {
   transition: 0.5s;
 }
 .project-welcome .fitness-app:hover .pt3 {
-  transform: translate(-5rem, -4rem);
+  transform: translate(3rem, -4rem);
   opacity: 0.6;
 }
 .project-welcome .fitness-app:hover .pt2 {
-  transform: translate(5rem, -7rem);
+  transform: translate(6rem, -7rem);
   opacity: 0.8;
 }
 .project-welcome .fitness-app:hover .pt1 {
-  transform: translate(15rem, -10rem);
+  transform: translate(10rem, -10rem);
   opacity: 1;
 }
 .project-welcome .feedback-app {
@@ -268,7 +280,7 @@ footer p {
   transition: 0.5s;
 }
 .project-welcome .feedback-app:hover {
-  margin-top: 12rem;
+  margin-top: 6rem;
   transform: unset;
   box-shadow: unset;
 }
@@ -276,21 +288,24 @@ footer p {
   padding-bottom: 10rem;
 }
 .project-welcome .feedback-app:hover .fd1 {
-  transform: translate(21rem, -9rem);
+  transform: translate(21rem, -9rem) scale(0.8);
 }
 .project-welcome .feedback-app:hover .fd2 {
-  transform: translate(7rem, -5rem);
+  transform: translate(7rem, -5rem) scale(0.8);
 }
 .project-welcome .feedback-app:hover .fd3 {
-  transform: translate(-7rem, 5rem);
+  transform: translate(-7rem, 5rem) scale(0.8);
 }
 .project-welcome .feedback-app:hover .fd4 {
-  transform: translate(-21rem, 9rem);
+  transform: translate(-21rem, 9rem) scale(0.8);
 }
 .project-welcome .website-container h2 {
-  font-size: 8rem;
   color: #ffffff;
   padding-bottom: 3rem;
+  font-size: 5rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: unset;
+  text-decoration: underline;
 }
 .project-welcome .project-container {
   display: flex;
@@ -326,66 +341,17 @@ footer p {
   box-shadow: 0.1rem 0.1rem 2rem #679893;
 }
 
-@media only screen and (max-width: 1200px) {
-  html {
-    font-size: 60%;
-  }
-
-  .project-welcome .feedback-app:hover .fd1 {
-    transform: translate(18rem, -6rem);
-  }
-  .project-welcome .feedback-app:hover .fd2 {
-    transform: translate(6rem, -3rem);
-  }
-  .project-welcome .feedback-app:hover .fd3 {
-    transform: translate(-6rem, 0rem);
-  }
-  .project-welcome .feedback-app:hover .fd4 {
-    transform: translate(-18rem, 3rem);
-  }
+.under-construction {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
 }
-@media only screen and (max-width: 992px) {
-  html {
-    font-size: 60%;
-  }
-
-  .project-welcome .feedback-app:hover .fd1 {
-    transform: translate(10rem, -6rem);
-  }
-  .project-welcome .feedback-app:hover .fd2 {
-    transform: translate(3.3rem, -3rem);
-  }
-  .project-welcome .feedback-app:hover .fd3 {
-    transform: translate(-3.3rem, 0rem);
-  }
-  .project-welcome .feedback-app:hover .fd4 {
-    transform: translate(-10rem, 3rem);
-  }
+.under-construction .under-construcion-lottie {
+  width: 80vw;
 }
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 50%;
-  }
 
-  .project-welcome .feedback-app:hover .fd1 {
-    transform: translate(10rem, -6rem) scale(0.8);
-  }
-  .project-welcome .feedback-app:hover .fd2 {
-    transform: translate(5rem, -3rem) scale(0.8);
-  }
-  .project-welcome .feedback-app:hover .fd3 {
-    transform: translate(0rem, 0rem) scale(0.8);
-  }
-  .project-welcome .feedback-app:hover .fd4 {
-    transform: translate(-5rem, 3rem) scale(0.8);
-  }
-  .project-welcome .project img {
-    width: 60rem;
-  }
-}
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 
   nav {
@@ -393,7 +359,6 @@ footer p {
   }
 
   .welcome {
-    height: unset;
     padding-bottom: 5rem;
   }
 
@@ -407,17 +372,21 @@ footer p {
   .project-welcome .mobile-app-container {
     padding-bottom: 1rem;
   }
-  .project-welcome .mobile-app-container h2, .project-welcome .website-container h2 {
-    font-size: 5rem;
+  .project-welcome .mobile-app-container h2,
+.project-welcome .website-container h2 {
+    font-size: 4rem;
   }
-  .project-welcome .mobile-app-container h3, .project-welcome .website-container h3 {
-    font-size: 3rem;
+  .project-welcome .mobile-app-container h3,
+.project-welcome .website-container h3 {
+    font-size: 2rem;
   }
   .project-welcome .mobile-app-container h2 {
     padding-top: 2rem;
   }
   .project-welcome .fitness-app {
     transform: scale(0.9);
+    margin-bottom: -2rem;
+    margin-top: -2rem;
   }
   .project-welcome .fitness-app:hover .pt3 {
     transform: translate(-5rem);
@@ -432,13 +401,13 @@ footer p {
     opacity: 1;
   }
   .project-welcome .feedback-app {
-    transform: scale(0.6);
-    margin-top: 0;
+    transform: scale(0.8);
+    margin-top: -3rem;
     box-shadow: -50px 50px 10px 5px rgba(0, 0, 0, 0.4);
   }
   .project-welcome .feedback-app:hover {
-    transform: scale(0.6);
-    margin-top: 0;
+    transform: scale(0.8);
+    margin-top: -3rem;
   }
   .project-welcome .feedback-app:hover .fd1 {
     transform: translate(6rem);
@@ -454,5 +423,55 @@ footer p {
   }
   .project-welcome .project img {
     width: 70vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .project-welcome .feedback-app:hover .fd1 {
+    transform: translate(9rem, -6rem) scale(0.7);
+  }
+  .project-welcome .feedback-app:hover .fd2 {
+    transform: translate(3rem, -3rem) scale(0.7);
+  }
+  .project-welcome .feedback-app:hover .fd3 {
+    transform: translate(-3rem, 0rem) scale(0.7);
+  }
+  .project-welcome .feedback-app:hover .fd4 {
+    transform: translate(-9rem, 3rem) scale(0.7);
+  }
+  .project-welcome .project img {
+    width: 60rem;
+  }
+
+  .contact-container .social-icons a {
+    margin-top: 1rem;
+  }
+  .contact-container h2 {
+    font-size: 4rem;
+  }
+  .contact-container .home-arrow {
+    width: 7rem;
+    height: 7rem;
+  }
+  .contact-container .home-arrow i {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .project-welcome .feedback-app:hover .fd1 {
+    transform: translate(12rem, -6rem) scale(0.8);
+  }
+  .project-welcome .feedback-app:hover .fd2 {
+    transform: translate(4rem, -3rem) scale(0.8);
+  }
+  .project-welcome .feedback-app:hover .fd3 {
+    transform: translate(-4rem, 0rem) scale(0.8);
+  }
+  .project-welcome .feedback-app:hover .fd4 {
+    transform: translate(-12rem, 3rem) scale(0.8);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 60%;
   }
 }/*# sourceMappingURL=styles.css.map */
