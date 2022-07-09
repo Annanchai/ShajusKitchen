@@ -291,10 +291,10 @@ footer p {
   transform: translate(21rem, -9rem) scale(0.8);
 }
 .project-welcome .feedback-app:hover .fd2 {
-  transform: translate(7rem, -5rem) scale(0.8);
+  transform: translate(7rem, -3rem) scale(0.8);
 }
 .project-welcome .feedback-app:hover .fd3 {
-  transform: translate(-7rem, 5rem) scale(0.8);
+  transform: translate(-7rem, 3rem) scale(0.8);
 }
 .project-welcome .feedback-app:hover .fd4 {
   transform: translate(-21rem, 9rem) scale(0.8);
@@ -347,6 +347,7 @@ footer p {
 }
 .under-construction .under-construcion-lottie {
   width: 80vw;
+  height: 90vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -361,27 +362,43 @@ footer p {
   .welcome {
     padding-bottom: 5rem;
   }
+  .welcome .lottie-container {
+    gap: 5rem;
+  }
+  .welcome .lottie:last-of-type {
+    margin-top: 0;
+  }
 
-  .lottie-container {
-    gap: 2rem;
+  .contact h2 {
+    width: 50rem;
+  }
+
+  .contact p {
+    width: 45rem;
+  }
+
+  .contact .contact-container .home-arrow {
+    top: 3rem;
   }
 
   .project-welcome h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+    padding-top: 7rem;
   }
   .project-welcome .mobile-app-container {
     padding-bottom: 1rem;
   }
   .project-welcome .mobile-app-container h2,
 .project-welcome .website-container h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .project-welcome .mobile-app-container h3,
 .project-welcome .website-container h3 {
     font-size: 2rem;
+    margin-top: 1rem;
   }
   .project-welcome .mobile-app-container h2 {
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   .project-welcome .fitness-app {
     transform: scale(0.9);
@@ -401,58 +418,60 @@ footer p {
     opacity: 1;
   }
   .project-welcome .feedback-app {
-    transform: scale(0.8);
+    transform: scale(0.7);
     margin-top: -3rem;
     box-shadow: -50px 50px 10px 5px rgba(0, 0, 0, 0.4);
   }
   .project-welcome .feedback-app:hover {
-    transform: scale(0.8);
     margin-top: -3rem;
   }
-  .project-welcome .feedback-app:hover .fd1 {
-    transform: translate(6rem);
+  .project-welcome .mobile-app-container .feedback-app:hover .fd1 {
+    transform: translate(3rem) scale(0.8);
   }
-  .project-welcome .feedback-app:hover .fd2 {
-    transform: translate(3rem);
+  .project-welcome .mobile-app-container .feedback-app:hover .fd2 {
+    transform: translate(1rem) scale(0.8);
   }
-  .project-welcome .feedback-app:hover .fd3 {
-    transform: translate(-1rem);
+  .project-welcome .mobile-app-container .feedback-app:hover .fd3 {
+    transform: translate(-1rem) scale(0.8);
   }
-  .project-welcome .feedback-app:hover .fd4 {
-    transform: translate(-5rem);
+  .project-welcome .mobile-app-container .feedback-app:hover .fd4 {
+    transform: translate(-3rem) scale(0.8);
   }
-  .project-welcome .project img {
-    width: 70vw;
+  .project-welcome .project-container .project img {
+    width: 75vw;
+  }
+
+  .contact .contact-container i {
+    font-size: 2rem;
+  }
+  .contact .contact-container .home-arrow {
+    width: 5rem;
+    height: 5rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  .project-welcome .feedback-app:hover .fd1 {
-    transform: translate(9rem, -6rem) scale(0.7);
-  }
-  .project-welcome .feedback-app:hover .fd2 {
-    transform: translate(3rem, -3rem) scale(0.7);
-  }
-  .project-welcome .feedback-app:hover .fd3 {
-    transform: translate(-3rem, 0rem) scale(0.7);
-  }
-  .project-welcome .feedback-app:hover .fd4 {
-    transform: translate(-9rem, 3rem) scale(0.7);
-  }
-  .project-welcome .project img {
-    width: 60rem;
+  html {
+    font-size: 60%;
   }
 
-  .contact-container .social-icons a {
+  .project-welcome .mobile-app-container .feedback-app:hover {
+    transform: scale(0.85);
+  }
+  .project-welcome .project img {
+    width: 80vw;
+  }
+
+  .contact .contact-container .social-icons a {
     margin-top: 1rem;
   }
-  .contact-container h2 {
+  .contact .contact-container h2 {
     font-size: 4rem;
   }
-  .contact-container .home-arrow {
+  .contact .contact-container .home-arrow {
     width: 7rem;
     height: 7rem;
   }
-  .contact-container .home-arrow i {
+  .contact .contact-container .home-arrow i {
     font-size: 3.5rem;
   }
 }
@@ -468,10 +487,5 @@ footer p {
   }
   .project-welcome .feedback-app:hover .fd4 {
     transform: translate(-12rem, 3rem) scale(0.8);
-  }
-}
-@media only screen and (max-width: 1200px) {
-  html {
-    font-size: 60%;
   }
 }/*# sourceMappingURL=styles.css.map */
